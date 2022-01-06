@@ -1,0 +1,25 @@
+
+email:
+  service:
+    emailId: pppbpmlinkstest@gmail.com
+    password: CTS@2022
+    protocol: smtp
+    auth: true
+    enabled: true
+    dubug: true
+    host: smtp.gmail.com
+    port: 587
+    
+spring:
+  cache:
+    type: redis
+    redis:
+      time-to-live: 900
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    
+feign:
+  client:
+    uri:
+      tweetsurl: http://localhost:8001/tweets
